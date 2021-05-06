@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <title>Code case</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Code case</h1>
+            </div>
+            <div class="col-12">
+                
+                <h5>Oppgaven:</h5>
+                <ol>
+                    <li>Hente data fra et api. Dataen og apiet er beskrevet lengre nede. </li>
+                    <li>Lage en tabel i html, og sette dataen fra apiet inn i den. Du setter tabellen inn i dette html dokumentet. </li>
+                    <li>Sette bakgrunnsfarge på raden for værmeldinger på følgende måte: <br> 
+                        Der hvor temperaturen er under 10 grader skal det være blå bakgrunn. <br>
+                        Der hvor temperaturen er over 15 skal det være rød bakgrunn.</li>
+                    <li>(Hvis du har tid) Hente ut navnet på byen værmeldingen er for. Vis dette i en overskrift ovenfor tabellen.</li>
+                </ol>
+                
+                <h5>Hjelpemidler:</h5> 
+                <p>
+                    Alle hjelpemidler er tillatt. Det er ønskelig at du baserer deg på native Javascript.
+                </p>
+                
+                <h5>Api</h5> 
+                <p>
+                    Apiet du skal bruke er: <a target="_blank" href="https://api.openweathermap.org/data/2.5/forecast?lat=60.3913&lon=5.3221&appid=b5749e8dbc962119cdcddf66a3040c69&units=metric"> LINK</a> <br>
+                    Dette er et api for å hente ut værmeldinger for fem dager. Apiet gir et json resultat. <br>
+
+                    Vi er ute etter følgende verdier fra apiet:
+                </p>
+                <ul>
+                    <li>Index (tellerverdi)</li>
+                    <li> Weather </li>
+                    <li> From </li>
+                    <li> Description </li>
+                    <li> Wind speed </li>
+                    <li> Temperature </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div id="by"></div>
+
+        <div class="row">
+            <div class="col-12" >
+                <table class="table table-active"> 
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Weather</th>
+                                    <th scope="col">From</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Wind speed</th>
+                                    <th scope="col">Temperature</th>
+                                </tr>
+                            </thead>
+                            <tbody id="start">
+                            </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
