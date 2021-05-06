@@ -1,8 +1,8 @@
 # BergenWeather | Code task fron Fanasparebank
 
-##English
+## English
 A website showing the temperature and windspeed in Bergen for the next five days. 
 
 
-##Norsk
+## Norsk
 En nettside som viser temperaturen og vind hastigheten i Bergen for de neste fem dagene.
