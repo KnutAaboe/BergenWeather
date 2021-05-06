@@ -1,4 +1,4 @@
-# BergenWeather | Code task fron Fanasparebank
+# BergenWeather | Code task from Fanasparebank
 
 ## English
 A website showing the temperature and windspeed in Bergen for the next five days. 
